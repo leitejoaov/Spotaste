@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to top, #87ceeb, #ffffff);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.clouds {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: url('../public/clouds.png') repeat-x;
+  animation: cloudAnimation 60s linear infinite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes cloudAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 2000px 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #1DB954;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 40vh;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.profile-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.profile-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.analysis-box {
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  background-color: #333;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.analysis-box p {
+  font-size: 18px;
+  line-height: 1.6;
 }

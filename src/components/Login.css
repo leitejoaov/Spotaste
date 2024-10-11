@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #e0f7fa, #b3e5fc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(128, 128, 128, 0.8); 
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.login-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+.login-logo {
+  width: 15%;
+  max-width: 100px; 
+  height: auto;
+} 
+
+.login-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+.login-description-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-description-text {
+  color: #333;
+  font-size: 18px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  background-color: #1db954;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #17a74a;
+}
+
+
+.login-logo.larger {
+  width: 30%;
+  max-width: 200px; 
+  height: auto; 
+}
+
+
+@font-face {
+  font-family: 'Fancake';
+  src: url('../fonts/Fancake.otf') format('opentype');
+}
+
+.login-title {
+  font-family: 'Fancake', sans-serif;
+  color: #ffffff;
+  font-size: 4.5rem;
+}
+
